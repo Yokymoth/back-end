@@ -69,7 +69,7 @@ exports.delete = (req, res) => {
   }).then(() => {
     res.status(200).json({
         status: true,
-        message: "Recipe was deleted successfully with id = " + recipeID
+        message: "Detail was deleted successfully with id = " + recipeID
     });
   });
 };

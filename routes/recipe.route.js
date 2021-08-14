@@ -24,6 +24,6 @@ module.exports = function (app) {
 
   app.get("/api/find/findByRecipeProfile/:userID", recipe.findByRecipeProfile);
 
-  app.delete("/api/recipe/delete/:recipeID", recipe.delete);
+  app.delete("/api/detail/delete/:recipeID", recipe.delete);
 };
 //[authJwt.verifyToken]

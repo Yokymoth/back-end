@@ -10,7 +10,8 @@ module.exports = function (app) {
     next();
   });
 
-  app.get("/api/find/cooking_process/:recipeID", cooking_process.findCookingProcess);
+  app.get("/api/find/cooking_process/recipeID/:recipeID", cooking_process.findCookingProcessByRecipeID);
+  app.get("/api/find/all/cooking_process", cooking_process.findAllCookingProcess);
   app.post("/api/cooking_process/createProcess", cooking_process.createProcess);
-
+  app.delete("/api/cooking_process/delete/:recipeID", cooking_process.delete);
 };
